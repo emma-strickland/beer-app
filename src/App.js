@@ -1,17 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
+import BeerList from './beerList';
 
-const BEERS = ["Glutenberg", "Ghostfish", "Departed Soles"]
-const BEERS2 = [
-  {
-    "name": "Glutenberg",
-    "abv": "8%",
-    "image": "https://"
-  }];
 function App() {
-  const beerItems = BEERS.map(beer => {
-    return <li key={beer}>{beer}</li>
-  })
   return (
     <div className="App">
       <header className="App-header">
@@ -27,9 +18,7 @@ function App() {
         >
           Learn React
         </a>
-        <ul>
-          {beerItems}
-        </ul>
+        <BeerList />
       </header>
       <p>This is a paragraph</p>
     </div>
