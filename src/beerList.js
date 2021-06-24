@@ -25,8 +25,8 @@ function BeerList() {
     ]
     return (
         <div>
-            {beers.map(beer => (
-                <div>
+            {beers.map((beer, idx) => (
+                <div key={idx}>
                     <h1>{beer.brewery}</h1>
                     <p>{beer.type}</p>
                     <p>{beer.ABV}</p>
